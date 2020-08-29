@@ -28,6 +28,7 @@ function main() {
 // Main logic goes here, use it in any way you see fit, its up to you
     const x = readline();
     var line2 = readline(); 
+    let num=readline().split(' ').map(x=>parseInt(x)); // Incase the input line has a space seperated values, then each of them is seperated into diff. array elements, based on ' ' present between each array item.
     
     foo(x);
     foo(line2);
