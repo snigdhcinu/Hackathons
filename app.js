@@ -29,6 +29,11 @@ function main() {
     const x = readline();
     var line2 = readline(); 
     let num=readline().split(' ').map(x=>parseInt(x)); // Incase the input line has a space seperated values, then each of them is seperated into diff. array elements, based on ' ' present between each array item.
+    /* Or something like this were also possible
+        num=parseInt(readline().split(' '));
+       Also note that it is inside readline() that the input is accessed, however if due to some arrangement it was already provided to us via function argument, 
+       refer to TCS-UI-2020 file on how to handle i/o then.
+    */
     
     foo(x);
     foo(line2);
